@@ -1,0 +1,149 @@
+l.container{
+    display: flex;
+  justify-content: center;
+ 
+  min-height: 100vh; /* Set a minimum height to fill the viewport */
+  flex-wrap: wrap;
+  
+  position: relative;
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      flex-direction: column; /* Stack items vertically */
+      
+    }
+  }
+  .bird-img {
+    flex: 1;
+    max-width: 100%;
+    height: 100vh;
+    top: 0; /* Position the image at the top */
+    left: 0; /* Position the image at the left */
+    z-index: -1; /* Set a lower z-index to place it behind the content */
+    order: 2;
+  }
+  @media (max-width: 500px) {
+    .bird-img {
+      visibility: hidden;
+   
+    }
+      
+  }
+  
+  .left-section {
+    flex: 1;
+    text-align: center;
+    position: relative; /* Add relative positioning to the left section */
+  }
+  @media (max-width: 500px) {
+    .left-section {
+      flex: 0;
+    }
+      
+  }
+  .right-section {
+    flex: 1;
+    /* Center the content horizontally */
+    justify-content: center;
+    order: 1;
+  }
+
+  .content{
+    margin-left: 7%;
+  }
+  h1{
+    font-family: cursive;
+    
+  }
+  @media (max-width: 360px) {
+    h1 {
+      margin-left: 50px;
+    }
+  }
+h2{
+    font-family: sans-serif;
+}
+@media (max-width: 360px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+input[type="email"],
+input[type="password"]{
+    border: none; /* Remove the default border */
+  border-bottom: 2px solid #000; /* Add a 1px solid underline */
+  outline: none; /* Remove the outline when the input is focused */
+  padding: 8px; /* Add padding to improve spacing */
+ width: 300px;
+}  
+@media (max-width:360px){
+  input[type="email"],
+input[type="password"]{
+  width: 250px;
+}
+}
+.forgot{
+    margin-left: 190px;
+    color: blue;
+    cursor: pointer;
+}
+@media (max-width:360px){
+  .forgot{
+    margin-left: 150px;
+  }
+}
+.submit{
+    border-radius: 18px;
+    background-color: gray;
+    color: white;
+    width: 120px;
+    height: 28px;
+    border: none;
+    margin-left: 100px;
+    margin-top: 0px;
+}
+.or-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    margin-top: 50px;
+  }
+ @media (max-width:360px){
+  .or-container{
+    width: 280px;
+  }
+ } 
+  .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #000;
+    margin: 0 5px;
+  }
+  
+  .or-text {
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1;
+    margin: 0 5px; 
+  }
+ .google{
+    margin-top: 15px;
+    margin-left: 18%;
+    height: 65px;
+    width: 100px;
+ } 
+ .google-btn{
+    display: flex;
+}
+.sign-google{
+    margin-top: 40px;
+}
+.signup{
+    margin-top: 20px;
+    margin-left: 7.5%;
+}
+  
+  
