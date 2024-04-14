@@ -1,0 +1,21 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 18px;
+    text-align: center;
+  }
+  
+  .card-container .card {
+    flex-basis: calc(33.33% - 20px); /* 33.33% width with a 20px gap between cards */
+    margin-bottom: 20px;
+    overflow: hidden;
+    flex-grow: 1;
+  }
+
+.card-container .card .card-img {
+  max-width: 100%;
+  height: 260px; /* Maintain the image's aspect ratio */
+  display: block;
+  
+}

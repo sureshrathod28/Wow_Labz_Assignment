@@ -1,0 +1,25 @@
+
+.payment-container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+   margin-top: 20%;
+  }
+  .payment-btn{
+    border-radius: 18px;
+    background-color:gray;
+    color: white;
+    width: 120px;
+    height: 28px;
+    border: none;
+    margin-bottom: 25px;
+  }
+  .payment-btn:hover{
+    background-color: blue;
+  }
+  .payment-content{
+    color: yellowgreen;
+  }
+  .order-details{
+    color: green;
+  }

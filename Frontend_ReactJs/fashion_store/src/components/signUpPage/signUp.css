@@ -1,0 +1,77 @@
+.container{
+    display: flex;
+  justify-content: center;
+ 
+  min-height: 100vh; /* Set a minimum height to fill the viewport */
+  flex-wrap: wrap;
+  
+  position: relative;
+  }
+  .bird-img {
+    max-width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0; /* Position the image at the top */
+    left: 0; /* Position the image at the left */
+    z-index: -1; /* Set a lower z-index to place it behind the content */
+  }
+  .left-section {
+    flex: 1;
+    text-align: center;
+    position: relative; /* Add relative positioning to the left section */
+  }
+  .right-section {
+    flex: 1;
+    /* Center the content horizontally */
+    justify-content: center;
+  }
+  .content{
+    margin-left: 7%;
+  }
+  h1{
+    font-family: cursive;
+    font-size: 4rem;
+  }
+h2{
+    font-family: sans-serif;
+}
+.name-input{
+  border: none; /* Remove the default border */
+  border-bottom: 2px solid #000; /* Add a 1px solid underline */
+  outline: none; /* Remove the outline when the input is focused */
+  padding: 12px; /* Add padding to improve spacing */ 
+ width: 290px;
+
+}
+@media (max-width:360px){
+  .name-input{
+     width:240px ;
+  }
+}
+.signup-input{
+    border: none; /* Remove the default border */
+  border-bottom: 2px solid #000; /* Add a 1px solid underline */
+  outline: none; /* Remove the outline when the input is focused */
+  padding: 12px; /* Add padding to improve spacing */ 
+  max-width: 300px;
+}  
+
+.submit{
+    border-radius: 18px;
+    background-color: gray;
+    color: white;
+    width: 120px;
+    height: 28px;
+    border: none;
+    margin-left: 100px;
+    margin-top: 25px;
+}
+@media(max-width:360px){
+  .submit{
+    margin-left: 80px;
+  }
+}
+
+
+  
+  
